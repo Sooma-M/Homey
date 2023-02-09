@@ -1,2 +1,2 @@
 # Homey
-Homey is a furniture management project
+Homey is a furniture management project. 
