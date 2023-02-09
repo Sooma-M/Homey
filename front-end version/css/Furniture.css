@@ -1,0 +1,161 @@
+/*Start Variable*/
+:root {
+    --normal-font: 'Barlow', sans-serif;
+    --italy-font: 'Fraunces', serif;
+    --normal-font-size: 18px;
+    --main-color: #2c4755;
+    --sec-color: #777;
+
+    /* new styles */
+    --fir-col: #fdc03d;
+    --sec-col: #dda466;
+    --thi-col: #a8e5c3;
+    --for-col: #707f58;
+}
+/*End Variable*/
+/*Start Global Rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 18px;
+    font-family: var(--normal-font);
+}
+::selection {
+    background-color: var(--fir-col);
+    color: white;
+}
+/* End Global Rules */
+.all-com {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.logo {
+    margin: 20px;
+    width: 100px;
+    border-radius: 20px;
+}
+.imag {
+    text-decoration: none;
+}
+.component {
+    color: var(--for-col);
+    list-style: none;
+    padding-left: 0;
+    margin: 20px;
+}
+.component li {
+    display: inline;
+    margin-left: 20px;
+    font-family: var(--normal-font);
+    transition: 0.5s;
+    border-radius: 30px;
+    padding: 10px;
+}
+li a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+}
+.component li:last-child {
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #eee;
+    color: var(--for-col);
+}
+.component li:hover {
+    background-color: var(--fir-col);
+}
+h1 {
+    padding: 50px;
+    text-align: center;
+    font-family: var(--italy-font);
+    font-weight: 900;
+    font-size: 60px;
+    color: var(--for-col);
+}
+.first {
+    padding: 0 200px;
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+.first div{
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.first div:not(.button):hover{
+    transform: translate(0, -4px);
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.087);
+}
+.first div img {
+    width: 100%;
+    border-radius: 10px;
+}
+.first div p {
+    text-align: center;
+    line-height: 1.6;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 600;
+    color: var(--sec-color);
+}
+.first div .button {
+    padding: 10px;
+    text-align: center;
+}
+.first div button {
+    text-align: center;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--for-col);
+    color: white;
+    transition: 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.first div button:hover{
+    background-color: var(--fir-col);
+}
+/**/
+h3 {
+    padding: 10px 200px;
+    font-family: var(--italy-font);
+    font-size: 40px;
+}
+.select {
+    padding: 10px 200px;
+}
+.select p{
+    font-weight: 600;
+}
+.select .links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.select a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--for-col);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.select a:hover {
+    background-color: var(--fir-col);
+}

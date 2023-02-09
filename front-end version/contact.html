@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- Google Font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Fraunces:wght@700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="all-com">
+        <a href="index.html" class="imag"><img src="image/logo1.png" alt="" class="logo"></a>
+        <ul class="component">
+            <li><a href="Furniture.html">Furniture</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+    <div class="corner final">
+        <div class="the-form">
+        <h2>Contact Us</h2>
+        <form id="form">
+            <div class="name">
+                <label>Name</label>
+                <br>
+                <input type="text" name="name" placeholder="Write your name">
+                <p class="check" id="checkN"></p>
+            </div>
+            <br>
+            <div class="email">
+                <label>Email</label>
+                <br>
+                <input type="email" name="email" placeholder="Write your email">
+                <p class="check" id="checkE"></p>
+            </div>
+            <br>
+            <div class="area">
+                <label>What do you want?</label>
+                <br>
+                <textarea name="area" placeholder="Write your complaint"></textarea>
+                <p class="check" id="cnt"></p>
+                <p class="check" id="checkA"></p>
+            </div>
+            <br>
+            <input type="submit" value="Send">
+        </form>
+        </div>
+    </div>
+    <script src="js/contact.js"></script>
+</body>
+</html>
