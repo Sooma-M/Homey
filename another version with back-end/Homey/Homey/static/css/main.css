@@ -1,0 +1,288 @@
+/*Start Variable*/
+:root {
+    --normal-font: 'Barlow', sans-serif;
+    --italy-font: 'Fraunces', serif;
+    --normal-font-size: 18px;
+    --main-color: #2c4755;
+    --sec-color: #777;
+
+    /* new styles */
+    --fir-col: #fdc03d;
+    --sec-col: #dda466;
+    --thi-col: #a8e5c3;
+    --for-col: #707f58;
+}
+/*End Variable*/
+/*Start Global Rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 18px;
+}
+::selection {
+    background-color: var(--fir-col);
+    color: white;
+}
+/* End Global Rules */
+
+/*Start Header*/
+.header {
+    background-image: url(../image/home/head.png);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.header .all-com {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.imag {
+    text-decoration: none;
+}
+.header .logo {
+    margin: 20px;
+    width: 100px;
+    border-radius: 20px;
+}
+.header .component {
+    color: var(--for-col);
+    list-style: none;
+    padding-left: 0;
+    margin: 20px;
+}
+.component li {
+    display: inline;
+    margin-left: 20px;
+    font-family: var(--normal-font);
+    transition: 0.5s;
+    border-radius: 30px;
+    padding: 10px;
+}
+li a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+}
+.component li:last-child {
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #eee;
+    color: var(--for-col);
+}
+.component li:hover {
+    background-color: var(--fir-col);
+}
+.header .other-com {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.header h1 {
+    font-family: var(--italy-font);
+    color: var(--for-col);
+    letter-spacing: 4px;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.header p {
+    font-family: var(--normal-font);
+    font-size: 25px;
+    margin-bottom: 70px;
+    color: var(--sec-color);
+    font-weight: 600;
+}
+/*End Header*/
+/*Start First Section*/
+.first-sec {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+}
+.first-sec img {
+    width: 100%;
+    height: 100%;
+}
+.first-sec .text {
+    padding: 140px;
+}
+.first-sec .text h3 {
+    font-family: var(--italy-font);
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--for-col);
+    margin-bottom: 40px;
+}
+.first-sec .text p {
+    font-family: var(--normal-font);
+    line-height: 1.6;
+    margin-bottom: 50px;
+    color: var(--sec-color);
+    font-weight: 600;
+}
+.first-sec .text a {
+    font-family: var(--italy-font);
+    text-transform: uppercase;
+    color: var(--for-col);
+    font-weight: 900;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.first-sec .text a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    right: 0;
+    background-color: #ee9b7a85;
+    border-radius: 10px;
+    z-index: -1;
+    transition: 0.5s;
+}
+.first-sec .text a:hover::before {
+    background-color: #e59372;
+}
+/*End First Section*/
+/*Start Second Section*/
+.second-sec {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+}
+.second-sec img {
+    width: 100%;
+    height: 100%;
+}
+.second-sec .text {
+    padding: 140px;
+    margin-top: 10px;
+}
+.second-sec .text h3 {
+    font-family: var(--italy-font);
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--for-col);
+    margin-bottom: 40px;
+}
+.second-sec .text p {
+    font-family: var(--normal-font);
+    line-height: 1.6;
+    margin-bottom: 50px;
+    color: var(--sec-color);
+    font-weight: 600;
+}
+.second-sec .text a {
+    font-family: var(--italy-font);
+    text-transform: uppercase;
+    color: var(--for-col);
+    font-weight: 900;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.second-sec .text a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    right: 0;
+    background-color: #c2c4c573;
+    border-radius: 10px;
+    z-index: -1;
+    transition: 0.5s;
+}
+.second-sec .text a:hover::before {
+    background-color: #adb1b4;
+}
+/*End Second Section*/
+/*Start 3rd Section*/
+.third-sec {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+}
+.third-sec .first-img{
+    background-image: url(../image/home/33.png);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.third-sec .second-img{
+    background-image: url(../image/home/44.png);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+/*End 3rd Section*/
+/*Start forth Section*/
+.forth-sec {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 100px;
+    text-align: center;
+}
+.forth-sec .text {
+    font-family: var(--italy-font);
+    text-transform: uppercase;
+    color: rgb(184, 184, 184);
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 100px;
+}
+.forth-sec .all-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 50px;
+}
+.forth-sec .all-info img {
+    border-radius: 50%;
+    width: 80px;
+    margin-bottom: 50px;
+}
+.forth-sec .all-info p {
+    font-family: var(--normal-font);
+    line-height: 1.6;
+    margin-bottom: 50px;
+    color: var(--sec-color);
+    font-weight: 600;
+}
+.forth-sec .all-info .info h3 {
+    font-family: var(--italy-font);
+    color: var(--for-col);
+    font-weight: 900;
+}
+.forth-sec .all-info .info p {
+    font-family: var(--normal-font);
+    color: rgb(184, 184, 184);
+    font-weight: 600;
+}
+/*End forth Section*/
+/*Start 5th Section*/
+.fifth-sec {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.fifth-sec img {
+    width: 100%;
+    height: 100%;
+}
+/*End 5th Section*/
