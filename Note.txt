@@ -1,0 +1,4 @@
+we use django for backend
+
+we put two files for website (one with only front-end website and another with back-end and front-end) 
+if you have any problem to see our website with back-end we put front-end file to show easily
